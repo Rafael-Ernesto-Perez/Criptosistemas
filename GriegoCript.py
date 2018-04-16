@@ -141,18 +141,29 @@ class Main:
                 valorCaracter[3] = self.porcentajesEspanol[i]
             menorDiferencia = 9999
             menorIndex = 0
-            """
+            
             for j in valorCaracter:
-                print "letra porc ",i, self.porcentajesCadena[i]
+                #print "letra porc ",i, self.porcentajesCadena[i]
+		#print "j: ", j
                 diferencia=abs(self.porcentajesCadena[i] - j)
                 if  diferencia < menorDiferencia:
                       menorDiferencia = diferencia
-                      menorIndex=valorCaracter(j)
+                      menorIndex=valorCaracter.index(j)
             valorTotal[menorIndex] +=1
-                #print "max:",valorCaracter, max(valorCaracter), valorCaracter.index(max(valorCaracter))
-             """
-        print valorTotal
+            #print "max:",valorCaracter, max(valorCaracter), valorCaracter.index(max(valorCaracter))
+	
 
+	acertados=max(valorTotal)
+	itemIdioma=valorTotal.index(acertados)            
+        print "Total: ", valorTotal
+	if itemIdioma == 0:
+		print "Ingles"
+        if itemIdioma == 1:
+                print "Frances"
+        if itemIdioma == 2:
+                print "Aleman"
+        if itemIdioma == 3:
+                print "Espanol"
 
 if __name__ == '__main__':
     main = Main()
