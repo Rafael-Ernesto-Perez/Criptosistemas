@@ -1,3 +1,4 @@
 # Criptosistemas
-Modelos de sistemas cifrados
-Categorizando según modelos, las diversas tecnicas de ataques criptoanaliticos
+
+Se desarrollan scripts para criptoanálisis. Implementando distintos sistemas cifrados, se aplican diversas técnicas de ataques cripto-analíticos, en cada uno.
+
