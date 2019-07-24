@@ -31,7 +31,7 @@ def ataqueTransposition(mensaje):
 
     # primero fuerza bruta a todas la posibles claves
     for clave in range(1, len(mensaje)):
-        print('Trying clave #%s...' % (clave))
+        #print('Trying clave #%s...' % (clave))
 
         texto_decifrado = transpositionDecryptador.decryptMensaje(clave, mensaje)
 
@@ -41,6 +41,7 @@ def ataqueTransposition(mensaje):
             print('Clave %s: %s' % (clave, texto_decifrado[:100]))
             print()
             print('Ingrese D para terminar, o presione Enter para continuar atacando:') # para seguir probandos otros casos
+            print(texto_decifrado)
             repuesta = input('> ')
 
             if repuesta.strip().upper().startswith('D'):

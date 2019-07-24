@@ -11,7 +11,7 @@ letras_y_espacios = letras_mayusculas + letras_mayusculas.lower() + ' \t\n'
 
 def leerDiccionario():
     #diccionario = open('../diccionarios/words_español.txt')
-    diccionario = open('../diccionarios/words_ingles.txt')#cambiar cuando se requiera
+    diccionario = open('../diccionarios/words_español.txt')#cambiar cuando se requiera
     palabras_x = {}
     for palabras in diccionario.read().split('\n'):
         palabras_x[palabras.upper()] = None
